@@ -148,10 +148,10 @@
 			for(var i = 0; i < segments; i++) {
 				var angle = startAngle + i * arc;
 				ctx.fillStyle = colors[i % colors.length];
-				ctx.font = "20px Georgia";
+				ctx.font = "15px Georgia";
 				var widthtext = context.measureText(text).width;
 				if(widthtext>x){
-					ctx.font = "10px Georgia";
+					ctx.font = "8px Georgia";
 				}
 				
 				ctx.save();
