@@ -150,9 +150,6 @@
 				ctx.fillStyle = colors[i % colors.length];
 				ctx.font = "15px Georgia";
 				var widthtext = context.measureText(text).width;
-				if(widthtext>x){
-					ctx.font = "8px Georgia";
-				}
 				
 				ctx.save();
 				ctx.beginPath();
