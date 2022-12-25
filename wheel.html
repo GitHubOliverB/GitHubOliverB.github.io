@@ -140,14 +140,15 @@
 			var WIDTH = canvas.width
 			var HEIGHT = canvas.height
 			
-			var x = WIDTH
-			var y = HEIGHT
+			var x = WIDTH/2
+			var y = HEIGHT/2
 			
 			ctx.clearRect(0, 0, canvas.width || WIDTH,canvas.height || HEIGHT);
 			
 			for(var i = 0; i < segments; i++) {
 				var angle = startAngle + i * arc;
 				ctx.fillStyle = colors[i % colors.length];
+				ctx.font = "20px Georgia";
 				
 				ctx.save();
 				ctx.beginPath();
